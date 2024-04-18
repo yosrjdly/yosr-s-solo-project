@@ -1,0 +1,145 @@
+body{
+   background-image: url(./img/bg-top.gif);
+
+}
+/* styles.css */
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   transition: margin-left 0.5s;
+}
+
+.sidebar {
+   background-color: #333;
+   color: #fff;
+   height: 100vh;
+   width: 250px;
+   position: fixed;
+   top: 0;
+   left: -250px; /* Initially hidden */
+   overflow-y: auto;
+   transition: left 0.5s; /* Smooth sliding effect */
+}
+
+.logo {
+   padding: 20px;
+}
+#Sidebar-icon{
+   margin-top: 10px;
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+   border :transparent;
+   background-color: #333;
+   align-items: center;
+   padding:10px;
+
+}
+.material-symbols-outlined{
+
+color: #E96479 ;
+   background-color: #333;
+   
+  
+
+}
+
+.search {
+   padding: 20px;
+}
+
+.search input[type="text"] {
+   width: 80%;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.search button {
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.search button:hover {
+   background-color: #45a049;
+}
+
+.settings {
+   padding: 20px;
+}
+
+.settings a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.settings a:hover {
+   text-decoration: underline;
+}
+/*****************top section********************/
+
+.top{
+   display: flex;
+   justify-content: space-around;
+   margin-left: 250px;
+   background-color: rgb(38, 36, 36);
+   border-radius: 40px;
+   width: 70%;
+   height: 600px;
+   border : solid transparent;
+   box-shadow: 2px 2px 2px 2px rgb(38, 36, 36);
+   
+   
+   
+}
+/******************game section*****************/
+
+.games-section {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   
+}
+
+.game {
+   padding: 5px;
+   width: 200px;
+   height: 267px;
+   border: solid transparent;
+   box-shadow: 0.5px 0.5px 0.5px 0.5px #E96479;
+   border-radius: 20px;
+
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.game img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
+
+.play-btn {
+   width: 200px;
+   height: 50px;
+   padding: 10px 20px;
+   background-color: #7DB9B6;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   align-items: center;
+
+}
+
+.play-btn:hover {
+   background-color: #fff;
+   color:#7DB9B6;
+}
