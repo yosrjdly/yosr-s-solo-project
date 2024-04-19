@@ -13,7 +13,7 @@ document.getElementById('Sidebar-icon').addEventListener('click', function() {
 
 // script.js
 
-function searchGames() {
+/*function searchGames() {
     var input, filter, games, game, gameName, i, txtValue;
     input = document.getElementById('searchInput');
     filter = input.value.toUpperCase();
@@ -30,7 +30,7 @@ function searchGames() {
         }
     }
 }
-
+*/
 
 
 

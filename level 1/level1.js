@@ -18,40 +18,40 @@
         { word: "india", hint: "It's known for its diverse culture and cuisine." },
         { word: "russia", hint: "It's the largest country by land area." }
       ]
-    };
+    }
 
     var currentWord;
-    var categorySelect = document.getElementById('category');
-    var hintElement = document.getElementById('hint');
-    var guessElement = document.getElementById('guess');
-    var resultElement = document.getElementById('result');
-    var triesElement = document.getElementById('tries');
-    var triesLeft = 5;
+    var categorySelect = document.getElementById('category')
+    var hintElement = document.getElementById('hint')
+    var guessElement = document.getElementById('guess')
+    var resultElement = document.getElementById('result')
+    var triesElement = document.getElementById('tries')
+    var triesLeft = 5
 
     function startGame() {
       triesLeft = 5;
       triesElement.textContent = "Tries left: " + triesLeft
       var category = categorySelect.value
-      var wordList = words[category];
+      var wordList = words[category]
       var randomIndex = Math.floor(Math.random() * wordList.length)
       currentWord = wordList[randomIndex].word
-      var hint = wordList[randomIndex].hint;
-      hintElement.textContent = "Hint: " + hint;
-      resultElement.textContent = "";
-      guessElement.value = "";
+      var hint = wordList[randomIndex].hint
+      hintElement.textContent = "Hint: " + hint
+      resultElement.textContent = ""
+      guessElement.value = ""
     }
 
     function checkGuess() {
-      var guess = guessElement.value.toLowerCase();
-      triesLeft--;
-      triesElement.textContent = "Tries left: " + triesLeft;
+      var guess = guessElement.value.toLowerCase()
+      triesLeft--
+      triesElement.textContent = "Tries left: " + triesLeft
       if (guess === currentWord) {
-        resultElement.textContent = "Congratulations! You guessed it right!";
+        resultElement.textContent = "Congratulations! You guessed it right!"
       } else {
         if (triesLeft === 0) {
-          resultElement.textContent = "Sorry, you've run out of tries. The correct word was: " + currentWord;
-          return;
+          resultElement.textContent = "Sorry, you've run out of tries. The correct word was: " + currentWord
+          return
         }
-        resultElement.textContent = "Sorry, try again!";
+        resultElement.textContent = "Sorry, try again!"
       }
     }

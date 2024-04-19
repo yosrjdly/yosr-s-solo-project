@@ -9,8 +9,8 @@ function Authentication() {
     var users = [];  // storing the new users in an empty array
 
     function createUser(username, password) {
-        var user = new User(username, password);
-        users.push(user);
+        var user = new User(username, password)
+        users.push(user)
     }
     // when a new user is created it get's pushed in the users array (storage)
 
@@ -22,7 +22,7 @@ function Authentication() {
             // the find method take an anonymos function as param that 
             //returns the users username and password
             return user.username === username && user.password === password
-        });
+        })
         return foundUser // last step we return founduser 
     }
 
@@ -53,7 +53,8 @@ $('#signupBtn').click(function() {
         auth.createUser(username, password)
         alert('Account created successfully!')
         // Automatically log in the user
-        $('#signup-card').hide(); 
+        $('#signup-card').hide()
+
         // Hide the sign up page  after successful signup
         window.location.href ="./profile/profile.html"
     } else {
