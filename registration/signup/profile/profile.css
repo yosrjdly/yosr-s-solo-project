@@ -64,25 +64,15 @@ color: #E96479 ;
    cursor: pointer;
 }
 
-.search button:hover {
-   background-color: #45a049;
-}
-
-.settings {
-   padding: 20px;
-}
-
-.settings a {
-   color: #fff;
-   text-decoration: none;
-}
-
-.settings a:hover {
-   text-decoration: underline;
-}
 /*****************top section********************/
 
-.top{
+.center{
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-around;
+}
+/*.top{
+
    display: flex;
    justify-content: space-around;
    margin-left: 250px;
@@ -106,16 +96,23 @@ color: #E96479 ;
 }
 
 .game {
+   color: #7DB9B6;
    padding: 5px;
    width: 200px;
    height: 267px;
    border: solid transparent;
    box-shadow: 0.5px 0.5px 0.5px 0.5px #E96479;
    border-radius: 20px;
+   background-color: rgb(38, 36, 36);
+
 
    text-align: center;
    display: flex;
    flex-direction: column;
+}
+a{
+   font-size: 30px;
+   color: #fff;
 }
 
 .game img {

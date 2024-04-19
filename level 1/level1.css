@@ -1,0 +1,70 @@
+body{
+
+    background-image: url(../registration/signup/profile/img/bg-top.gif);
+}
+
+.wrapper{
+    
+    padding: 50px;
+    margin-left: 250px;
+   background-color: rgb(38, 36, 36);
+   border-radius: 40px;
+   width: 70%;
+   height: 600px;
+   border : solid transparent;
+   box-shadow: 2px 2px 2px 2px rgb(38, 36, 36);
+   
+}
+p{ color: #4D455D;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;}
+
+h1{ color: #E96479;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;}
+
+
+    input {
+        width: 200px;
+        height: 50px;
+        align-items: center ;
+        border-radius: 20px;
+        background-color: transparent;
+        text-align: center;
+        color: bisque;
+        border:  0.1px solid bisque;
+    }
+button {
+        width: 200px;
+        height: 50px;
+        align-items: center ;
+        border-radius: 20px;
+        background-color: transparent;
+        color: bisque;
+}
+
+
+select {
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    align-items: center ;
+    border-radius: 20px;
+    background-color: transparent;
+    color: bisque;
+    text-align: center;
+    background-color:rgb(38, 36, 36)  ;
+}
+label{ color: #7DB9B6;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;}

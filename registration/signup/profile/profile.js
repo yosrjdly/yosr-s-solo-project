@@ -9,6 +9,30 @@ document.getElementById('Sidebar-icon').addEventListener('click', function() {
     }
 
 })
+//******searching******//
+
+// script.js
+
+function searchGames() {
+    var input, filter, games, game, gameName, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    games = document.querySelectorAll('.game');
+
+    for (i = 0; i < games.length; i++) {
+        game = games[i];
+        gameName = game.querySelector('h1');
+        txtValue = gameName.textContent || gameName.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            game.style.display = "";
+        } else {
+            game.style.display = "none";
+        }
+    }
+}
+
+
+
 
 
 ////////// game section /////////////////

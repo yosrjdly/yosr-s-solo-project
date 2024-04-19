@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="level1.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <!--google fonts import-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+  <!-------------------------------------->
+
+   <!-------------------------------------->
+
+  <link rel="stylesheet" href="level1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guessing Game</title>
 </head>
 <body>
-    
-
-
-
-
-
-
-
-
-
-    <script src="level1.js"></script>
+<div class="wrapper">
+  
+  <h1>Word Guessing Game</h1>
+  <label for="category">Choose a category:</label>
+  <select id="category">
+    <option id="option" value="animals">Animals</option>
+    <option value="fruits">Fruits</option>
+    <option value="countries">Countries</option>
+  </select>
+  <button onclick="startGame()">Start Game</button>
+  <p id="hint"></p>
+  <label for="guess">Enter your guess:</label>
+  <input type="text" id="guess">
+  <button onclick="checkGuess()">Check Guess</button>
+  <p id="result"></p>
+  <p id="tries">Tries left: 5</p>
+</div>
+  
+  <script src="level1.js"></script>
 </body>
 </html>
